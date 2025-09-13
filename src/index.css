@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small design helpers used in App.jsx */
+:root { --card-bg: rgba(255, 255, 255, 0.9); }
+
+body { @apply bg-gradient-to-br from-brand-50 via-white to-brand-100; }
+
+.card { @apply rounded-2xl border bg-white/90 shadow-soft backdrop-blur; }
+
+.btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-xl font-medium transition
+              border border-gray-300 hover:border-brand-500 hover:shadow; }
+
+.btn-primary { @apply bg-black text-white hover:opacity-90; }
+
+.input { @apply w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-400; }
+
+.label { @apply block text-sm text-gray-600 mb-1; }
